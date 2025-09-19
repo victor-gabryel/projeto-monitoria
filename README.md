@@ -39,6 +39,7 @@ Foram adicionadas imagens para suporte ao modo noturno e para a página de login
 ### 2. Footer
 - Alterações no layout e cores do footer em todas as páginas.
 - Garantia de consistência visual entre modo claro e modo escuro.
+- Adicionado **link no footer** para a página web do projeto: [Projeto Monitoria Web](https://victor-gabryel.github.io/projeto-monitoria/)
 
 ### 3. Banner Principal (`index.html`)
 - Alteração da `<div class="main-banner">` para suportar o modo noturno.
@@ -61,3 +62,4 @@ Foram adicionadas imagens para suporte ao modo noturno e para a página de login
 
 ## 👨‍💻 Créditos
 - Página de login e melhorias: **Victor Gabryel da Silva**
+- Repositório pessoal do GitHub: [victor-gabryel](https://github.com/victor-gabryel)
