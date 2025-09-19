@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <title>Lugx Gaming - Cadastro</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS Adicional -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-lugx-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Modo Noturno -->
+    <link rel="stylesheet" href="assets/css/noturn-mode.css">
+
+    <style>
+        /* Botão laranja igual ao menu ativo */
+        .btn-primary {
+            background-color: #ff7f50;
+            border-color: #ff7f50;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #e76e3e;
+            border-color: #e76e3e;
+        }
+
+        /* Layout principal */
+        .login-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            min-height: 500px;
+        }
+
+        /* Imagem esquerda */
+        .img-login {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0;
+            border-bottom-left-radius: 0.5rem;
+            border-top-left-radius: 0.5rem;
+        }
+
+        /* Card do formulário à direita com fundo levemente escuro */
+        .card-login {
+            border-radius: 0;
+            border-bottom-right-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+            margin-left: 0;
+            height: 100%;
+            box-shadow: none;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.08);
+            backdrop-filter: blur(5px);
+        }
+
+        /* Para telas pequenas, colocar em coluna */
+        @media (max-width: 992px) {
+            .login-container {
+                flex-direction: column;
+            }
+
+            .card-login {
+                margin-left: 0;
+                margin-top: 10px;
+                border-radius: 0;
+            }
+        }
+
+        /* Ajustes gerais do formulário */
+        .login-container .card-body input.form-control,
+        .login-container .card-body select.form-control {
+            border-radius: 0;
+        }
+
+        .login-container .card-body button.btn {
+            border-radius: 0;
+            padding: 10px;
+        }
+
+        /* Ajuste do alerta de erro */
+        #mensagem-erro {
+            margin-bottom: 10px;
+            display: none;
+        }
+
+        /* Checkbox link */
+        .form-check-label a {
+            text-decoration: none;
+        }
+
+    
+
+        /* Preloader */
+        .js-preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .preloader-inner .dot {
+            width: 15px;
+            height: 15px;
+            margin: 0 5px;
+            background: #fff;
+            border-radius: 50%;
+            animation: pulse 1s infinite;
+        }
+
+        .preloader-inner .dots span {
+            width: 10px;
+            height: 10px;
+            margin: 0 3px;
+            background: #fff;
+            border-radius: 50%;
+            display: inline-block;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.5); opacity: 0.5; }
+        }
+
+        @keyframes bounce {
+            0%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-15px); }
+        }
+
+        /* Modo noturno */
+        body.dark-mode {
+            background-color: #121212;
+            color: #fff;
+        }
+
+        body.dark-mode .card-login {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        body.dark-mode header, body.dark-mode footer {
+            background-color: #1e1e1e;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Modo Noturno -->
+    <button id="dark-mode-toggle">Modo Noturno</button>
+
+    <!-- Cabeçalho -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.png" alt="" style="width: 158px;">
+                        </a>
+                        <ul class="nav">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="shop.html">Nossa Loja</a></li>
+                            <li><a href="product-details.html">Detalhes do Produto</a></li>
+                            <li><a href="contact.html">Fale Conosco</a></li>
+                            <li><a href="login.html" class="active" style="background-color: #ee626b;">Entrar</a></li>
+                        </ul>
+                        <a class='menu-trigger'><span>Menu</span></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Página de Cadastro -->
+    <div class="page-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Criar sua Conta</h3>
+                    <span class="breadcrumb"><a href="index.html">Início</a> > Criar Conta</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="container my-5">
+            <div class="login-container">
+
+                <!-- Imagem esquerda -->
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="assets/images/img-form.png" class="img-login" alt="Imagem de fundo">
+                </div>
+
+                <!-- Formulário direita -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="card shadow-sm card-login">
+                        <div class="card-body p-4">
+                            <h2 class="text-center mb-4">Criar Conta</h2>
+
+                            <div class="alert alert-danger" id="mensagem-erro"></div>
+
+                            <form id="form-cadastro">
+                                <div class="mb-3">
+                                    <input type="text" name="nome" class="form-control" placeholder="Nome completo" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" name="telefone" class="form-control" placeholder="Telefone (opcional)">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="date" name="data_nascimento" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <select name="genero" class="form-control" required>
+                                        <option value="" disabled selected>Selecione seu gênero</option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="feminino">Feminino</option>
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" name="senha" class="form-control" placeholder="Senha" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" name="confirmar_senha" class="form-control" placeholder="Confirmar Senha" required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="termos" required>
+                                    <label class="form-check-label" for="termos">Aceito os <a href="#">Termos de Uso</a></label>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                </div>
+                            </form>
+
+                            <div class="text-center mt-3">
+                                <a href="login.html" class="text-decoration-none">Já tem conta? Entrar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bg" style="background-image: url('assets/images/footer-bg.jpg');">
+        <div class="container">
+            <div class="col-lg-12">
+                <p>
+                    Copyright © 2048 LUGX Gaming Company. Todos os direitos reservados. &nbsp;&nbsp;
+                    <a rel="nofollow" href="https://templatemo.com" target="_blank">Design: TemplateMo</a>
+                    &nbsp;| Modificado por Victor Gabryel da Silva
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <!-- Modificação para o Modo Noturno -->
+    <script src="assets/js/noturn-mode.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const form = document.getElementById("form-cadastro");
+        const mensagemErro = document.getElementById("mensagem-erro");
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault(); // impede o envio real do form
+
+            // Pega os valores das senhas
+            const senha = form.senha.value;
+            const confirmarSenha = form.confirmar_senha.value;
+
+            // Resetar mensagem de erro
+            mensagemErro.style.display = "none";
+            mensagemErro.innerText = "";
+
+            // Validação de senha
+            if (senha !== confirmarSenha) {
+                mensagemErro.style.display = "block";
+                mensagemErro.innerText = "As senhas não coincidem!";
+                return;
+            }
+
+            // Aqui você pode adicionar mais validações se quiser
+
+            // Se passou nas validações
+            alert("Cadastro realizado com sucesso! (Simulação)");
+            form.reset(); // limpa o formulário
+        });
+    });
+    </script>
+
+
+    
+</body>
+
+</html>
