@@ -60,4 +60,4 @@ Foram adicionadas imagens para suporte ao modo noturno e para a página de login
 ---
 
 ## 👨‍💻 Créditos
-- Página de login e melhorias: **Victor Gabryel**
+- Página de login e melhorias: **Victor Gabryel da Silva**
