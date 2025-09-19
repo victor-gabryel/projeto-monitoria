@@ -6,22 +6,22 @@ const imagesToToggle = [
     {
         selector: ".page-heading.header-text",
         normal: "assets/images/banner-bg.jpg",
-        dark: "assets/images/banner-bg-dark.jpg"
+        dark: "assets/images/banner-bg-dark.jpg" //Imagem Adicionada
     },
     {
         selector: ".page-heading-bg",
         normal: "assets/images/page-heading-bg.jpg",
-        dark: "assets/images/page-heading-bg-dark.jpg"
+        dark: "assets/images/page-heading-bg-dark.jpg" //Imagem Adicionada
     },
     {
         selector: ".footer-bg",
         normal: "assets/images/footer-bg.jpg",
-        dark: "assets/images/footer-bg-dark.jpg"
+        dark: "assets/images/footer-bg-dark.jpg" //Imagem Adicionada
     },
     {
         selector: ".main-banner",
         normal: "assets/images/banner-bg.jpg",
-        dark: "assets/images/banner-bg-dark.jpg"
+        dark: "assets/images/banner-bg-dark.jpg" //Imagem Adicionada
     }
 ];
 

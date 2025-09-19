@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="assets/css/noturn-mode.css">
 
     <style>
-        /* Botão laranja igual ao menu ativo */
         .btn-primary {
             background-color: #ff7f50;
             border-color: #ff7f50;
@@ -36,7 +35,6 @@
             border-color: #e76e3e;
         }
 
-        /* Layout principal */
         .login-container {
             display: flex;
             flex-wrap: wrap;
@@ -44,7 +42,6 @@
             min-height: 500px;
         }
 
-        /* Imagem esquerda */
         .img-login {
             width: 100%;
             height: 100%;
@@ -54,7 +51,6 @@
             border-top-left-radius: 0.5rem;
         }
 
-        /* Card do formulário à direita com fundo levemente escuro */
         .card-login {
             border-radius: 0;
             border-bottom-right-radius: 0.5rem;
@@ -78,21 +74,18 @@
             justify-content: center;
         }
 
-        /* Inputs e selects */
         .card-login input.form-control,
         .card-login select.form-control {
             border-radius: 0;
             height: 45px;
         }
 
-        /* Botão */
         .card-login .btn-primary {
             border-radius: 0;
             padding: 10px;
             height: 45px;
         }
 
-        /* Para telas pequenas, colocar em coluna */
         @media (max-width: 992px) {
             .login-container {
                 flex-direction: column;
@@ -105,7 +98,6 @@
             }
         }
 
-        /* Ajustes gerais do formulário */
         .login-container .card-body input.form-control,
         .login-container .card-body select.form-control {
             border-radius: 0;
@@ -116,18 +108,15 @@
             padding: 10px;
         }
 
-        /* Ajuste do alerta de erro */
         #mensagem-erro {
             margin-bottom: 10px;
             display: none;
         }
 
-        /* Checkbox link */
         .form-check-label a {
             text-decoration: none;
         }
 
-        /* Preloader */
         .js-preloader {
             position: fixed;
             top: 0;
@@ -183,21 +172,6 @@
             40% {
                 transform: translateY(-15px);
             }
-        }
-
-        /* Modo noturno */
-        body.dark-mode {
-            background-color: #121212;
-            color: #fff;
-        }
-
-        body.dark-mode .card-login {
-            background-color: rgba(255, 255, 255, 0.05);
-        }
-
-        body.dark-mode header,
-        body.dark-mode footer {
-            background-color: #1e1e1e;
         }
     </style>
 </head>
@@ -348,7 +322,7 @@
             const mensagemErro = document.getElementById("mensagem-erro");
 
             form.addEventListener("submit", function (e) {
-                e.preventDefault(); // impede o envio real do form
+                e.preventDefault(); // Impede o envio real do form
 
                 const senha = form.senha.value;
                 const confirmarSenha = form.confirmar_senha.value;
@@ -362,12 +336,11 @@
                     return;
                 }
 
-                alert("Cadastro realizado com sucesso! (Simulação)");
+                alert("Cadastro realizado com sucesso!");
                 form.reset();
             });
         });
     </script>
 
 </body>
-
 </html>
