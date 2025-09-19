@@ -170,3 +170,57 @@ body.dark-mode .footer-bg p {
 #dark-mode-toggle:hover {
     background-color: #ffaa00;
 }
+
+/* ==============================
+   Modo noturno para o login.html
+   ============================== */
+/* Modo noturno apenas para o form */
+body.dark-mode h2 {
+    color: #fff;
+}
+
+body.dark-mode .card-login {
+    background-color: #1e1e1e !important; 
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .card-login input.form-control,
+body.dark-mode .card-login select.form-control {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+body.dark-mode .card-login input.form-control::placeholder {
+    color: #aaa;
+}
+
+body.dark-mode .card-login .btn-primary {
+    background-color: #ff7f50;
+    border-color: #ff7f50;
+    color: #fff;
+}
+
+body.dark-mode .card-login .btn-primary:hover {
+    background-color: #e76e3e;
+    border-color: #e76e3e;
+}
+
+body.dark-mode .card-login .alert-danger {
+    background-color: #a94442;
+    color: #fff;
+    border: none;
+}
+
+body.dark-mode .card-login a {
+    color: #ffa07a;
+}
+
+body.dark-mode .card-login a:hover {
+    color: #ff7f50;
+}
+
+body.dark-mode .form-check-label {
+    color: #fff;
+}
