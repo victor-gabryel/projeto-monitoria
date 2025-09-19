@@ -1,0 +1,172 @@
+/* ==============================
+   Modo Noturno Completo (Cores Ajustadas)
+   ============================== */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff !important; /* mais contraste */
+}
+
+/* Cabeçalho, menus e rodapé */
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #1c1c1c !important;
+    color: #ffffff !important;
+}
+
+/* Breadcrumbs */
+body.dark-mode .breadcrumb a {
+    color: #ffcc00 !important;
+}
+body.dark-mode .breadcrumb a:hover {
+    color: #ffd633 !important; 
+}
+
+/* Destaque para h4 dentro de .down-content */
+body.dark-mode .down-content h4 {
+    color: #ffd633 !important; 
+    text-shadow: 1px 1px 2px #000000; 
+}
+
+/* Destaque para h4 dentro de .item */
+body.dark-mode .item h4 {
+    color: #ffee99 !important; 
+    text-shadow: 1px 1px 2px #000000; 
+}
+
+/* Destaque para h2 dentro de .section-heading */
+body.dark-mode .section-heading h2 {
+    color: #f5d249 !important; 
+    text-shadow: 1px 1px 2px #000000; 
+}
+
+
+/* Cards de produtos e listas */
+body.dark-mode .item,
+body.dark-mode .single-product,
+body.dark-mode .trending-box .item,
+body.dark-mode .related-games .item {
+    background-color: #1f1f1f !important;
+    border: 1px solid #555; /* borda mais visível */
+    color: #ffffff !important; /* texto mais legível */
+}
+
+/* Preços */
+body.dark-mode .price em {
+    color: #ffdd66 !important; 
+}
+body.dark-mode .price {
+    color: #ffee99 !important; 
+}
+
+/* Links e botões */
+body.dark-mode a,
+body.dark-mode .nav a {
+    color: #ffd633 !important; 
+}
+body.dark-mode a:hover,
+body.dark-mode .nav a:hover {
+    color: #ffbb00 !important; 
+}
+
+/* Botões principais */
+body.dark-mode .main-button a,
+body.dark-mode button,
+body.dark-mode #dark-mode-toggle {
+    background-color: #ffbb00 !important;
+    color: #121212 !important;
+    border: none;
+}
+body.dark-mode .main-button a:hover,
+body.dark-mode button:hover {
+    background-color: #ffaa00 !important; 
+}
+
+/* Inputs e formulários */
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #2a2a2a !important;
+    color: #ffffff !important; 
+    border: 1px solid #666 !important; 
+}
+
+/* Tabs */
+body.dark-mode .nav-tabs .nav-link.active {
+    background-color: #ffbb00 !important;
+    color: #121212 !important;
+}
+
+/* Paginação */
+body.dark-mode .pagination li a,
+body.dark-mode .pagination li a.is_active {
+    background-color: #1f1f1f !important;
+    color: #ffd633 !important;
+    border: 1px solid #555;
+}
+body.dark-mode .pagination li a:hover {
+    background-color: #ffaa00 !important;
+    color: #121212 !important;
+}
+
+/* Preloader */
+body.dark-mode #js-preloader .preloader-inner {
+    background-color: #1f1f1f !important;
+}
+
+/* ==============================
+   Banners e Rodapé (overlay e posicionamento)
+   ============================== */
+
+/* Banner principal */
+.page-heading.header-text,
+.page-heading-bg,
+.footer-bg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Camada escura sobre banners e rodapé */
+body.dark-mode .page-heading.header-text::before,
+body.dark-mode .page-heading-bg::before,
+body.dark-mode .footer-bg::before {
+    content: "";
+    position: absolute !important;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(18,18,18,0.7) !important;
+    z-index: 1 !important;
+}
+
+/* Texto dentro dos banners */
+body.dark-mode .page-heading.header-text h3,
+body.dark-mode .page-heading.header-text span,
+body.dark-mode .page-heading-bg h2,
+body.dark-mode .page-heading-bg p,
+body.dark-mode .footer-bg h2,
+body.dark-mode .footer-bg p {
+    position: relative !important;
+    z-index: 2 !important;
+    color: #ffd633 !important;
+}
+
+/* ==============================
+   Botão de alternância do modo noturno
+   ============================== */
+#dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffbb00;
+    color: #121212;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 999;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#dark-mode-toggle:hover {
+    background-color: #ffaa00;
+}
